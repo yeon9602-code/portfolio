@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>연프로 | 행정조사 전문가 · 前 경찰 수사관</title>
+<meta name="description" content="21년 경찰 수사관 경력의 국민건강보험공단 행정조사 전문가 연프로의 포트폴리오">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700;900&family=Noto+Serif+KR:wght@600;700&display=swap" rel="stylesheet">
+<style>
+:root{--navy:#0f2342;--navy2:#1b3a6b;--gold:#c9a74a;--ink:#1f2937;--muted:#6b7280;--line:#e5e7eb;--bg:#f7f8fb;--white:#fff}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:'Noto Sans KR',system-ui,sans-serif;color:var(--ink);background:var(--bg);line-height:1.7;-webkit-font-smoothing:antialiased}
+a{color:inherit;text-decoration:none}
+.wrap{max-width:1080px;margin:0 auto;padding:0 24px}
+header{position:sticky;top:0;z-index:50;background:rgba(15,35,66,.95);backdrop-filter:blur(8px);color:#fff}
+nav{display:flex;align-items:center;justify-content:space-between;height:64px}
+.logo{font-family:'Noto Serif KR',serif;font-weight:700;letter-spacing:.08em;font-size:1.1rem}
+.logo span{color:var(--gold)}
+nav ul{display:flex;gap:28px;list-style:none;font-size:.92rem}
+nav ul a{opacity:.85;transition:.2s}nav ul a:hover{opacity:1;color:var(--gold)}
+@media(max-width:720px){nav ul{display:none}}
+.hero{background:linear-gradient(135deg,var(--navy) 0%,var(--navy2) 70%,#24518f 100%);color:#fff;padding:110px 0 100px;position:relative;overflow:hidden}
+.hero::after{content:"";position:absolute;right:-120px;top:-120px;width:420px;height:420px;border-radius:50%;border:60px solid rgba(201,167,74,.12)}
+.hero .tag{display:inline-block;border:1px solid var(--gold);color:var(--gold);padding:4px 14px;border-radius:999px;font-size:.82rem;letter-spacing:.12em;margin-bottom:22px}
+.hero h1{font-family:'Noto Serif KR',serif;font-size:clamp(2.4rem,6vw,4rem);font-weight:700;line-height:1.2;margin-bottom:14px}
+.hero h2{font-weight:400;font-size:clamp(1.05rem,2.2vw,1.35rem);opacity:.9;margin-bottom:34px}
+.hero p{max-width:620px;opacity:.85;font-weight:300;font-size:1.02rem}
+.hero .cta{margin-top:40px;display:flex;gap:14px;flex-wrap:wrap}
+.btn{padding:12px 26px;border-radius:6px;font-weight:500;font-size:.95rem;transition:.2s}
+.btn-gold{background:var(--gold);color:var(--navy)}.btn-gold:hover{background:#dbb95e}
+.btn-ghost{border:1px solid rgba(255,255,255,.5);color:#fff}.btn-ghost:hover{border-color:#fff;background:rgba(255,255,255,.08)}
+.stats{background:var(--white);border-bottom:1px solid var(--line)}
+.stats .wrap{display:grid;grid-template-columns:repeat(3,1fr);text-align:center}
+.stats div{padding:28px 10px}
+.stats div+div{border-left:1px solid var(--line)}
+.stats b{display:block;font-family:'Noto Serif KR',serif;font-size:2rem;color:var(--navy)}
+.stats small{color:var(--muted);font-size:.9rem}
+@media(max-width:600px){.stats .wrap{grid-template-columns:1fr}.stats div+div{border-left:0;border-top:1px solid var(--line)}}
+section{padding:90px 0}
+section:nth-of-type(even){background:var(--white)}
+.sec-head{margin-bottom:46px}
+.sec-head .eyebrow{color:var(--gold);font-size:.8rem;letter-spacing:.2em;font-weight:500;margin-bottom:8px}
+.sec-head h3{font-family:'Noto Serif KR',serif;font-size:clamp(1.6rem,3.4vw,2.2rem);color:var(--navy)}
+.sec-head h3::after{content:"";display:block;width:48px;height:3px;background:var(--gold);margin-top:14px}
+.about{display:grid;grid-template-columns:1.2fr .8fr;gap:48px;align-items:start}
+@media(max-width:820px){.about{grid-template-columns:1fr}}
+.about p{font-size:1.05rem;margin-bottom:18px}
+.quote{background:var(--navy);color:#fff;padding:34px 30px;border-radius:10px;position:relative;font-family:'Noto Serif KR',serif;font-size:1.1rem;line-height:1.8}
+.quote::before{content:"“";position:absolute;top:-10px;left:18px;font-size:5rem;color:var(--gold);line-height:1;opacity:.7}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:22px}
+.card{background:var(--white);border:1px solid var(--line);border-radius:10px;padding:30px 26px;transition:.25s;position:relative}
+section:nth-of-type(even) .card{background:var(--bg)}
+.card:hover{transform:translateY(-4px);box-shadow:0 14px 34px rgba(15,35,66,.1);border-color:var(--gold)}
+.card .num{font-family:'Noto Serif KR',serif;color:var(--gold);font-size:.9rem;letter-spacing:.1em;margin-bottom:10px}
+.card h4{font-size:1.15rem;color:var(--navy);margin-bottom:10px}
+.card p{color:var(--muted);font-size:.95rem}
+.project{background:var(--navy);color:#fff;border-radius:14px;padding:54px 48px;display:grid;grid-template-columns:1fr 1fr;gap:44px;align-items:center}
+@media(max-width:820px){.project{grid-template-columns:1fr;padding:38px 26px}}
+.project .label{color:var(--gold);letter-spacing:.15em;font-size:.8rem;margin-bottom:12px}
+.project h4{font-family:'Noto Serif KR',serif;font-size:1.7rem;margin-bottom:16px;line-height:1.35}
+.project p{opacity:.88;font-weight:300}
+.project ul{list-style:none;display:grid;gap:14px}
+.project li{background:rgba(255,255,255,.07);border-left:3px solid var(--gold);padding:14px 18px;border-radius:0 8px 8px 0;font-size:.95rem}
+.project li b{display:block;font-weight:500;margin-bottom:2px}
+.laws{display:flex;flex-wrap:wrap;gap:12px;margin-top:30px}
+.laws span{background:var(--white);border:1px solid var(--line);padding:10px 18px;border-radius:999px;font-size:.93rem;color:var(--navy);font-weight:500}
+.skill-cols{display:grid;grid-template-columns:repeat(2,1fr);gap:22px}
+@media(max-width:700px){.skill-cols{grid-template-columns:1fr}}
+.skill{padding:26px;border-radius:10px;background:var(--bg);border-top:4px solid var(--navy)}
+.skill h4{color:var(--navy);margin-bottom:8px;font-size:1.05rem}
+.skill p{color:var(--muted);font-size:.93rem}
+section.contact{background:linear-gradient(135deg,var(--navy),var(--navy2));color:#fff;text-align:center}
+.contact h3{font-family:'Noto Serif KR',serif;font-size:2rem;margin-bottom:14px}
+.contact p{opacity:.85;margin-bottom:32px}
+.contact .box{display:inline-flex;align-items:center;gap:12px;background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.25);padding:16px 30px;border-radius:8px;font-size:1.05rem}
+footer{background:#0a182e;color:rgba(255,255,255,.55);text-align:center;padding:26px 0;font-size:.85rem}
+</style>
+</head>
+<body>
+<header><div class="wrap"><nav>
+<a href="#top" class="logo">YEON<span>.</span>PRO</a>
+<ul><li><a href="#about">소개</a></li><li><a href="#work">담당 업무</a></li><li><a href="#project">핵심 프로젝트</a></li><li><a href="#expertise">전문 역량</a></li><li><a href="#contact">연락처</a></li></ul>
+</nav></div></header>
+
+<section class="hero" id="top" style="padding-top:110px">
+<div class="wrap">
+<div class="tag">ADMINISTRATIVE INVESTIGATION EXPERT</div>
+<h1>연프로</h1>
+<h2>행정조사 전문가 &nbsp;|&nbsp; 前 경찰 수사관 (21년)</h2>
+<p>21년간의 경찰 수사 현장 경험을 바탕으로, 국민건강보험공단에서 불법개설 요양기관 행정조사와 수사의뢰의 법적 완결성을 책임지고 있습니다. 증거로 말하고, 절차로 지킵니다.</p>
+<div class="cta"><a href="#project" class="btn btn-gold">핵심 프로젝트 보기</a><a href="#contact" class="btn btn-ghost">연락하기</a></div>
+</div>
+</section>
+
+<div class="stats"><div class="wrap">
+<div><b>21년</b><small>경찰 수사관 경력</small></div>
+<div><b>6개 법령</b><small>교차 검토 전문 영역</small></div>
+<div><b>특사경</b><small>도입 대비 교육체계 개발</small></div>
+</div></div>
+
+<section id="about"><div class="wrap">
+<div class="sec-head"><div class="eyebrow">ABOUT</div><h3>수사관의 눈으로 행정조사를 설계합니다</h3></div>
+<div class="about">
+<div>
+<p>21년간 경찰 수사관으로 현장에서 사건을 다루며 쌓은 증거수집·법리 검토 역량을 인정받아 <strong>국민건강보험공단에 특채된 행정조사 전문가</strong>입니다.</p>
+<p>현재 불법개설 요양기관(이른바 사무장병원·면허대여약국 등)에 대한 행정조사부터 수사의뢰, 이의신청 대응, 법률 검토, 판례 분석, 그리고 조사 인력 교육까지 조사 업무의 전 과정을 총괄하고 있습니다.</p>
+<p>행정조사는 수사가 아니지만, 그 결과가 형사절차와 행정처분으로 이어지는 만큼 <strong>수사에 준하는 절차적 엄격성과 증거중심 사고</strong>가 필요하다고 믿습니다. 그 신념을 조직의 역량으로 바꾸는 것이 저의 일입니다.</p>
+</div>
+<div class="quote">조사의 결론은 조사관의 확신이 아니라,<br>법정에서 살아남는 증거와 절차가 결정한다.</div>
+</div>
+</div></section>
+
+<section id="work"><div class="wrap">
+<div class="sec-head"><div class="eyebrow">RESPONSIBILITIES</div><h3>담당 업무</h3></div>
+<div class="grid">
+<div class="card"><div class="num">01</div><h4>불법개설 요양기관 행정조사</h4><p>의료법·약사법상 개설 자격 위반이 의심되는 요양기관에 대한 현지조사 기획, 자료 확보, 관계자 진술 청취 및 사실관계 확정.</p></div>
+<div class="card"><div class="num">02</div><h4>수사의뢰 (고소·고발)</h4><p>조사 결과를 형사절차로 연결하기 위한 고소·고발장 작성, 범죄사실 특정, 증거목록 정리 및 수사기관 협력.</p></div>
+<div class="card"><div class="num">03</div><h4>이의신청·쟁송 대응</h4><p>환수처분 등에 대한 이의신청·행정심판·행정소송 단계에서 처분의 적법성과 사실인정의 타당성을 방어.</p></div>
+<div class="card"><div class="num">04</div><h4>법률 검토 및 판례 분석</h4><p>관련 법령 해석과 최신 대법원·하급심 판례를 분석하여 조사 기준과 처분 논리에 반영.</p></div>
+<div class="card"><div class="num">05</div><h4>조사 인력 교육 총괄</h4><p>조사관 대상 교육과정 설계, 교재 개발, 사례 중심 실무 교육 운영.</p></div>
+<div class="card"><div class="num">06</div><h4>조사 절차 표준화</h4><p>행정조사기본법에 따른 절차 준수 체계와 체크리스트를 정비하여 조사의 법적 안정성을 제고.</p></div>
+</div>
+</div></section>
+
+<section id="project"><div class="wrap">
+<div class="sec-head"><div class="eyebrow">KEY PROJECT</div><h3>핵심 프로젝트</h3></div>
+<div class="project">
+<div>
+<div class="label">특별사법경찰 도입 대비</div>
+<h4>조사 인력을 '준수사관'으로<br>— 교육체계 및 교재 개발</h4>
+<p>공단 특사경 도입에 대비하여 조사 인력이 준수사관 수준의 <strong>리걸마인드(legal mind)</strong>와 <strong>증거중심 사고</strong>를 갖추도록 체계적인 교육과정과 교재를 개발하고 있습니다. 조사와 수사의 간극을 메우는 것이 목표입니다.</p>
+</div>
+<ul>
+<li><b>리걸마인드 양성</b>구성요건 중심의 사실관계 분석과 법리 적용 훈련</li>
+<li><b>증거중심 사고</b>증거능력·증명력 관점에서의 자료 확보 및 보전 방법론</li>
+<li><b>절차 적법성</b>형사소송법·행정조사기본법에 부합하는 조사 절차 설계</li>
+<li><b>실무 교재·사례집</b>판례와 실제 사례 기반의 단계별 교육 교재 개발</li>
+</ul>
+</div>
+</div></section>
+
+<section id="expertise"><div class="wrap">
+<div class="sec-head"><div class="eyebrow">EXPERTISE</div><h3>전문 역량</h3></div>
+<div class="skill-cols">
+<div class="skill"><h4>다법령 교차 검토</h4><p>형사법과 행정법, 보건의료법령을 동시에 검토하여 하나의 사실관계가 각 법령에서 어떻게 평가되는지 입체적으로 분석합니다.</p></div>
+<div class="skill"><h4>조사 → 수사 연계 설계</h4><p>행정조사 단계에서 확보한 자료가 형사절차에서 증거로 활용될 수 있도록 수집·보전 절차를 설계합니다.</p></div>
+<div class="skill"><h4>처분의 법적 안정성 확보</h4><p>이의신청·쟁송 단계를 예측하여 조사 초기부터 사실인정과 법리 구성을 견고하게 구축합니다.</p></div>
+<div class="skill"><h4>교육 설계 및 지식 전수</h4><p>21년 수사 경험을 체계적인 교육 콘텐츠로 전환하여 조직 전체의 조사 역량을 끌어올립니다.</p></div>
+</div>
+<div class="laws">
+<span>의료법</span><span>국민건강보험법</span><span>형법</span><span>형사소송법</span><span>행정법</span><span>행정조사기본법</span>
+</div>
+</div></section>
+
+<section id="contact" class="contact"><div class="wrap">
+<h3>Contact</h3>
+<p>강의, 자문, 협업 문의를 환영합니다.</p>
+<div class="box">✉ &nbsp;<span>이메일 주소 (추후 기재)</span></div>
+</div></section>
+
+<footer><div class="wrap">© 2026 연프로. All rights reserved.</div></footer>
+
+
+</body>
+</html>
