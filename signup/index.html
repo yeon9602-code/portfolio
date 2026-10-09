@@ -115,7 +115,7 @@ form.addEventListener('submit',async e=>{
   if(ENDPOINT.indexOf('PLACEHOLDER')>-1) return showErr('아직 폼 수신 설정이 완료되지 않았습니다. 관리자에게 문의해 주세요.');
   btn.disabled=true; btn.textContent='전송 중…';
   try{
-    const fd=new FormData(form); fd.append('동의','예'); fd.append('신청시각',new Date().toLocaleString('ko-KR'));
+    const fd=new FormData(form); fd.append('동의','예'); fd.append('_replyto',email); fd.append('_subject','[얼리 액세스 신청] '+name); fd.append('신청시각',new Date().toLocaleString('ko-KR'));
     const r=await fetch(ENDPOINT,{method:'POST',body:fd,headers:{'Accept':'application/json'}});
     if(!r.ok) throw new Error();
     document.getElementById('formWrap').style.display='none';
